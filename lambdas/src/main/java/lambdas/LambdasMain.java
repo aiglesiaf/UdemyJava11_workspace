@@ -5,7 +5,9 @@ import java.util.List;
 
 public class LambdasMain {
 	
-	public static void main(String[] args) {
+	
+	// Sort example with Collections
+	/*public static void main(String[] args) {
 
 		
 		Thread thread = new Thread(()->{
@@ -26,6 +28,24 @@ public class LambdasMain {
 		thread.start();
 		
 		
+	}*/
+
+
+	public static void main(String[] args) {
+		
+		Person mike = new Person("mike", 25);
+		Person paul = new Person("paul", 32);
+		
+		List<Person> people = new ArrayList<>();
+		
+		people.add(mike);
+		people.add(paul);
+
+		people.forEach((p)->{
+			System.out.println(p.getName());
+		});		
+		
 	}
+
 
 }
